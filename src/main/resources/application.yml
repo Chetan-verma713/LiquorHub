@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: liquorhub
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  devtools:
+    add-properties: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/liquorhub?createDatabaseIfNotExist=true
+    username: root
+    password: n3admin@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    web: info
+
+server:
+  port: 8081
